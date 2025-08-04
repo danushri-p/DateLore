@@ -4,7 +4,10 @@ Welcome to **DateLore**, a digital platform built to explore and share historica
 
 ---
 
-## Day1 Accomplished
+
+## Daily Progress Log
+
+## Work Completed
 
 - Initialized a Node.js project using `npm init`
 - Installed essential packages: `express`, `cors`, `mongoose`, `dotenv`
