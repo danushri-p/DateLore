@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -6,21 +8,21 @@ const authRoutes = require('./routes/auth');
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5000;
-
-// Connect to DB
-connectDB();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
+// DB Connection
+connectDB();
+
 // Routes
 app.use('/api/auth', authRoutes);
 
-// Root test route
+// Root check
 app.get('/', (req, res) => {
-  res.send('Welcome to DateLore Auth Backend 🚀');
+  res.send('Welcome to Auth API 🚀');
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
