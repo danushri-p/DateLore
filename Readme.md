@@ -8,6 +8,7 @@ Welcome to **DateLore**, a digital platform built to explore and share historica
 ## Daily Progress Log
 
 ## Work Completed
+# Day -1
 
 - Initialized a Node.js project using `npm init`
 - Installed essential packages: `express`, `cors`, `mongoose`, `dotenv`
@@ -16,3 +17,14 @@ Welcome to **DateLore**, a digital platform built to explore and share historica
 - Used a `.env` file to store configuration securely
 - Implemented a simple `/test` route to verify that the server is running
 - Successfully pushed the initial code to GitHub
+
+---
+
+# Day 2: User Authentication
+
+- User registration with hashed password
+- Secure login with password verification
+- JWT-based authentication
+- MongoDB integration via Mongoose
+- Error handling and status responses
+- Tested using Postman
