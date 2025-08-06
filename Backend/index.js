@@ -1,10 +1,9 @@
-
-
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./database/db');
 const authRoutes = require('./routes/auth');
+const noteRoutes = require('./routes/noteRoutes');
 
 dotenv.config();
 const app = express();
@@ -18,6 +17,7 @@ connectDB();
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/notes', noteRoutes);
 
 // Root check
 app.get('/', (req, res) => {
